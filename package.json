@@ -1,0 +1,14 @@
+{
+  "name": "nestjs-nats-observability",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/gateway",
+    "apps/billing"
+  ],
+  "scripts": {
+    "build": "npm run build -w apps/gateway && npm run build -w apps/billing",
+    "start:gateway": "npm run start -w apps/gateway",
+    "start:billing": "npm run start -w apps/billing"
+  }
+}
